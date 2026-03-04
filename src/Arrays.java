@@ -37,13 +37,38 @@ public class Arrays {
         }
     }
     public void sumArray(){
-        int total;
+        int total=0;
     for (int x=0; x<nums.length;x++){
-        System.out.println();
-        total= total + nums[x];
+      total += + nums[x];
     }
         System.out.println(total);
+    }
+    public void averageNum(){
+        int total=0;
+        for (int x=0; x<nums.length; x++){
+            total+=nums[x];
+        }
+        System.out.println("Average:" );
+    }
+    public void maxNum(){
+        int max= nums[0];
+        for (int x=1; x<nums.length; x++){
+if (nums[x]>max){
+    max=nums[x];
+        }
+        }
 
+        System.out.println("Max Number:" + max);
+    }
+    public void minNum(){
+        int min=nums[0];
+
+        for ( int x=1;x<nums.length; x++){
+            if (nums[x]<min){
+                min=nums[x];
+            }
+        }
+        System.out.println("Min number:" + min);
     }
 }
 
