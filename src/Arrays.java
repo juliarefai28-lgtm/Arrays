@@ -3,6 +3,7 @@ import java.sql.Array;
 public class Arrays {
 
     public int[] nums;
+    public Astronout[] astros;
 
     public static void main(String[] args) {
         System.out.println(" Welcome to awesome arrays ");
@@ -12,6 +13,8 @@ public class Arrays {
     public Arrays() {
 
         nums = new int[10];
+
+        astros = new Astronout[7];
         nums[9] = 11;
         nums[8] = 13;
         nums[7] = 155;
@@ -29,6 +32,16 @@ public class Arrays {
             System.out.println(nums[9]);
         }
         displayArray();
+        sumArray();
+        minNum();
+
+        Astronout a1=new Astronout();
+        astros[4]= new Astronout();
+        astros[4].eyes=40;
+        astros[4].name="gerald";
+        astros[4].printInfo();
+
+
     }
 
     public void displayArray() {
@@ -61,14 +74,14 @@ if (nums[x]>max){
         System.out.println("Max Number:" + max);
     }
     public void minNum(){
-        int min=nums[0];
+        int smallest= nums[0];
 
         for ( int x=1;x<nums.length; x++){
-            if (nums[x]<min){
-                min=nums[x];
+            if (nums[x]<smallest){
+                smallest=nums[x];
             }
         }
-        System.out.println("Min number:" + min);
+        System.out.println("Min number:" + smallest);
     }
 }
 
