@@ -36,10 +36,52 @@ public class Arrays {
         minNum();
 
         Astronout a1=new Astronout();
+        astros[1]= new Astronout();
+        astros[1].eyes=30;
+        astros[1].name="gerald";
+        astros[1].printInfo();
+
+
+        Astronout a2=new Astronout();
+        astros[2]= new Astronout();
+        astros[2].eyes=93;
+        astros[2].name="Sally";
+        astros[2].printInfo();
+
+
+        Astronout a3=new Astronout();
+        astros[3]= new Astronout();
+        astros[3].eyes=30;
+        astros[3].name="Rebecca";
+        astros[3].printInfo();
+
+
+        Astronout a4=new Astronout();
         astros[4]= new Astronout();
-        astros[4].eyes=40;
-        astros[4].name="gerald";
+        astros[4].eyes=49;
+        astros[4].name="Ronald";
         astros[4].printInfo();
+
+
+        Astronout a5=new Astronout();
+        astros[5]= new Astronout();
+        astros[5].eyes=39;
+        astros[5].name="Christopher";
+        astros[5].printInfo();
+
+
+        Astronout a6=new Astronout();
+        astros[6]= new Astronout();
+        astros[6].eyes=1;
+        astros[6].name="Lily";
+        astros[6].printInfo();
+
+
+        Astronout a7=new Astronout();
+        astros[7]= new Astronout();
+        astros[7].eyes=7;
+        astros[7].name="John";
+        astros[7].printInfo();
 
 
     }
